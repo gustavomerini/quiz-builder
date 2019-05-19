@@ -3,8 +3,8 @@ import "./QuizBuilder.css";
 import * as yup from "yup";
 import React, { Component } from "react";
 import { Formik, Form, FieldArray } from "formik";
-import Question from "../Components/Question";
-import FormField from "../Components/FormField";
+import Question from "../Components/Question/Question";
+import FormField from "../Components/FormField/FormField";
 
 const initialState = {
     title: "",
@@ -23,7 +23,9 @@ const signupValidationSchema = yup.object().shape({
     questions: yup.array().of(
         yup.object().shape({
             title: yup.string().required("Question Title is required"),
-            a: yup.string().required("A is required"),
+            a: yup.string().required("Option 1 is required"),
+            b: yup.string().required("Option 2 is required"),
+            c: yup.string().required("Option 3 is required"),
         })
     ),
 });
@@ -56,11 +58,11 @@ export class QuizBuilder extends Component {
                     onSubmit={this.saveQuizHandler}
                     render={({ values, isSubmitting }) => (
                         <Form>
-                            <FormField name="title" type="text" />
+                            <FormField placeholder="Quiz Title" name="title" type="text" />
                             <FieldArray
                                 name="questions"
                                 render={({ push, remove }) => (
-                                    <div className="QuizBuilder-questions">
+                                    <div className="QuizBuilderQuestions">
                                         {values.questions.map(
                                             (question, index) => (
                                                 <Question

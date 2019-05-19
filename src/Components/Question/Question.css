@@ -1,0 +1,20 @@
+.QuizBuilderCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  width: 25%;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin: auto;
+  padding: 10px 16px;
+  margin-top: 10px;
+}
+
+.QuizBuilderCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Quiz-Builder .QuizBuilderCard input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }

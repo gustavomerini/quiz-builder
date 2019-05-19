@@ -1,0 +1,7 @@
+.FormField {
+    color: white;
+}
+
+.FormField .error {
+    margin-top: 5px;
+}
