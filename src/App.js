@@ -1,7 +1,7 @@
 import "./App.css";
 
 import React, { Component } from "react";
-import QuizBuilder from "./Containers/QuizBuilder";
+import QuizBuilder from "./Containers/QuizBuilder/QuizBuilder";
 
 export class App extends Component {
   // #TODO code-splitting

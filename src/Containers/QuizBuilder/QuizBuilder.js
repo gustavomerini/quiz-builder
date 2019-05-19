@@ -3,8 +3,8 @@ import "./QuizBuilder.css";
 import * as yup from "yup";
 import React, { Component } from "react";
 import { Formik, Form, FieldArray } from "formik";
-import Question from "../Components/Question/Question";
-import FormField from "../Components/FormField/FormField";
+import Question from "../../Components/Question/Question";
+import FormField from "../../Components/FormField/FormField";
 
 const initialState = {
     title: "",
