@@ -1,7 +1,26 @@
 .FormField {
-    color: white;
+  color: white;
 }
 
 .FormField .error {
-    margin-top: 5px;
+  margin-top: 5px;
+}
+
+.QuizBuilderCard .FormField .field label {
+  float: left;
+  padding-right: 10px;
+}
+
+.FormField .field #title {
+  width: 25%;
+}
+
+.FormField .field label {
+  width: 25%;
+}
+
+.QuizBuilderCard .FormField .field {
+  clear: both;
+  text-align: right;
+  line-height: 25px;
 }
