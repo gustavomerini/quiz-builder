@@ -1,3 +1,5 @@
 # Quiz Builder
 
-This is a very simple react project created to exercise React.js
+Project created to exercise some React content.
+
+This project contains simple state flow, Formik with arrays and validations.
